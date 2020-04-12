@@ -1,0 +1,51 @@
+  .header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      min-height: 1000px;
+      background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, .9)), to(rgba(243, 129, 129, .9))), url('../../img/bgr.png');
+      background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, .9), rgba(243, 129, 129, .9)), url('../../img/bgr.png');
+      background-image: linear-gradient(0deg, rgba(252, 227, 138, .9), rgba(243, 129, 129, .9)), url('../../img/bgr.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+  
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      .header {
+          background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, .9)), to(rgba(243, 129, 129, .9))), url('../../img/bgr@2x.png');
+          background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, .9), rgba(243, 129, 129, .9)), url('../../img/bgr@2x.png');
+          background-image: linear-gradient(0deg, rgba(252, 227, 138, .9), rgba(243, 129, 129, .9)), url('../../img/bgr@2x.png');
+      }
+  }
+  
+  .header__navigation {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding-top: 26px;
+      margin-bottom: 174px;
+  }
+  
+  .header__content {
+      padding: 0px 190px;
+      margin-bottom: 230px;
+  }
+  
+  .header__slogan {
+      display: block;
+      font-size: 72px;
+      margin-bottom: 22px;
+  }
+  
+  .header__title {
+      font-size: 150px;
+      line-height: 1;
+      margin: 0px 0px 98px;
+  }

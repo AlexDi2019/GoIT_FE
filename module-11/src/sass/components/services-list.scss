@@ -1,0 +1,52 @@
+.section__services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0px 0px 96px 0px;
+    @extend %list;
+}
+
+.services__item {
+    flex: 0 0 380px;
+    text-align: left;
+    padding: 0px 10px 0px 80px;
+    background-repeat: no-repeat;
+    background-position: 20px 0;
+    background-size: 32px 32px;
+    &::before {
+        display: block;
+        content: '';
+    }
+    &:not(:nth-last-of-type(-n+3)) {
+        margin-bottom: 94px;
+    }
+    &--alarm {
+        background-image: url(../images/sprite/alarm.svg);
+    }
+    &--graph {
+        background-image: url(../images/sprite/line_graph.svg);
+    }
+    &--computer {
+        background-image: url(../images/sprite/computer.svg);
+    }
+    &--book {
+        background-image: url(../images/sprite/book.svg);
+    }
+    &--home {
+        background-image: url(../images/sprite/home.svg);
+    }
+    &--image {
+        background-image: url(../images/sprite/image.svg);
+    }
+}
+
+.services__title {
+    @include font-settings($secondary-font-size, 1);
+    margin: 0px 0px 12px 0px;
+}
+
+.services__text {
+    @include font-settings($primary-text-size, 1.6);
+    margin: 0px;
+}

@@ -1,0 +1,104 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend %content-width;
+    padding-top: 25px;
+    margin-bottom: 55px;
+    @media (min-width: 1280px) {
+        margin-bottom: 40px;
+    }
+    @media (min-width: 1680px) {
+        margin-bottom: 50px;
+    }
+}
+
+.logo {
+    &__img {
+        width: 79px;
+        height: 31px;
+        @media (min-width: 768px) {
+            width: 126px;
+            height: 46px;
+        }
+    }
+}
+
+.nav {
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+    &-list {
+        display: none;
+        @media (min-width: 1280px) {
+            display: flex;
+        }
+    }
+    &-item {
+        margin-right: 45px;
+        &:last-child {
+            @media (min-width: 1680px) {
+                margin-right: 55px;
+            }
+        }
+        &__link {
+            @include text(12px, 600, 68px, $slave-color);
+            text-transform: uppercase;
+            @media (min-width: 1680px) {
+                font-size: 14px;
+            }
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+    &__button {
+        @extend %button;
+        display: none;
+        color: $main-color;
+        margin-right: 45px;
+        background-color: transparent;
+        border: 2px solid $main-color;
+        @media (min-width: 768px) {
+            display: block;
+        }
+        @media (min-width: 1280px) {
+            margin: 0;
+        }
+    }
+}
+
+.burger {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width: 1280px) {
+        display: none;
+    }
+    &:hover {
+        cursor: pointer;
+        & .top {
+            transform: rotate(45deg);
+            transform-origin: 0;
+        }
+        & .center {
+            opacity: 0;
+        }
+        & .bottom {
+            transform: rotate(-45deg);
+            transform-origin: 0;
+        }
+        & .line {
+            width: 32px;
+        }
+    }
+}
+
+.line {
+    width: 24px;
+    height: 2px;
+    background-color: black;
+}

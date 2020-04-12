@@ -1,0 +1,23 @@
+.section__slogan {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.section__title {
+    position: relative;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    &::after {
+        @include pseudo($display: block);
+        position: absolute;
+        width: 60px;
+        height: 3px;
+        background-color: $primary-red-color;
+        left: 50%;
+        bottom: -42px;
+        transform: translateX(-50%);
+        margin: 0px;
+    }
+}

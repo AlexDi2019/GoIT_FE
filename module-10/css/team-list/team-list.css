@@ -1,0 +1,36 @@
+.section__team-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px 0px 82px 0px;
+}
+
+.team__cart {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 28px;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.team__wrapper {
+    background: rgb(149, 225, 211);
+}
+
+.team__name {
+    font-size: 14px;
+    line-height: 1;
+    margin: 0px 0px 10px 0px;
+}
+
+.team__occupation {
+    line-height: 1.6;
+    margin: 0px;
+}

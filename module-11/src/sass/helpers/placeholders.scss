@@ -1,0 +1,23 @@
+%button {
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+%link {
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+%list {
+    padding: 0px;
+    list-style: none;
+}
+
+%item {
+    cursor: pointer;
+}
+
+%icon {
+    display: block;
+}

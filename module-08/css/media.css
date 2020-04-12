@@ -1,0 +1,135 @@
+@media screen and (max-width: 767px) {
+    .section-item:not(:nth-last-of-type(-4n+1)) {
+        margin-bottom: 26px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    .main-header {
+        background-image: url(../img/tablet-img.png);
+    }
+    .main-navigation-wrapper {
+        flex-direction: row;
+        align-items: center;
+        margin: 38px 0px 148px;
+        padding: 0px 50px;
+    }
+    .site-logo {
+        margin: 0px;
+    }
+    .navigation-items {
+        order: 1;
+        margin: 0px;
+        padding: 0px;
+    }
+    .main-header-content {
+        margin: 0px 0px 234px;
+        padding: 0px 130px;
+    }
+    .header-content-title {
+        font-size: 52px;
+        margin: 0px 0px 32px;
+        padding: 0px;
+    }
+    .header-content-description {
+        font-size: 24px;
+        margin: 0px 0px 16px;
+        padding: 0px;
+    }
+    .header-button {
+        padding: 12px 20px;
+    }
+    /* main */
+    .section-title {
+        font-size: 22px;
+        margin: 70px 0px 32px;
+        padding: 0px;
+    }
+    .section-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 0px 138px;
+    }
+    .section-item {
+        max-width: 236px;
+        min-height: 236px;
+        margin: 0px;
+        padding: 0px 10px;
+    }
+    .section-item-chemistry {
+        order: 2;
+    }
+    .section-item-cap {
+        order: 1;
+    }
+    .section-item-telegram {
+        order: 3;
+    }
+    /* footer */
+    .main-footer-wrapper {
+        margin: 36px 0px 40px;
+    }
+    .footer-button {
+        padding: 10px 26px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 940px) {
+    .section-item:not(:nth-last-of-type(-2n+3)) {
+        margin-bottom: 34px;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .container {
+        width: 940px;
+    }
+    .main-header {
+        background-image: url(../img/desktop-img.png);
+    }
+    .main-navigation-wrapper {
+        padding: 0px;
+    }
+    .main-header-content {
+        padding: 0px 218px;
+    }
+    .header-content-title {
+        margin: 0px 0px 26px;
+    }
+    .header-content-description {
+        margin: 0px 0px 32px;
+    }
+    /* main */
+    .section-items {
+        align-items: start;
+        padding: 0px;
+    }
+    .section-item {
+        max-width: 220px;
+        padding: 0px;
+    }
+    .section-item:not(:nth-last-child(-n+4)) {
+        margin-bottom: 36px;
+    }
+    .section-item-chemistry {
+        order: 2;
+    }
+    .section-item-cap {
+        order: 1;
+    }
+    .section-item-telegram {
+        order: 3;
+    }
+    /* footer */
+    .main-footer-wrapper {
+        margin: 36px 0px 72px;
+    }
+    .footer-button {
+        padding: 10px 26px;
+    }
+}

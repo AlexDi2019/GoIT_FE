@@ -1,0 +1,43 @@
+.typographic-mr {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.typographic-mb {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.typographic-rr {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.typographic-ri {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.typographic-kr {
+    font-family: "Kaushan Script", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.text-ligth {
+    color: rgb(255, 255, 255);
+}
+
+.text-grey {
+    color: rgb(153, 153, 153);
+}
+
+.text-dark {
+    color: rgb(51, 51, 51);
+}
+
+.title {
+    text-transform: uppercase;
+}

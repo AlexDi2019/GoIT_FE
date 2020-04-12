@@ -1,0 +1,45 @@
+.team-list {
+    @include center-flex('spbtw');
+    width: 100%;
+    margin: 0px 0px 82px 0px;
+}
+
+.section__team-list {
+    font-size: 0px;
+    @extend %list;
+}
+
+.team__item {
+    @extend %item;
+    &:hover .team__cart,
+    &:focus .team__cart {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+.team__cart {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 28px;
+    transition: all 0.2s linear;
+    &:hover .team--list,
+    &:focus .team--list {
+        opacity: 1;
+    }
+}
+
+.team__wrapper {
+    background: $background-light-color;
+}
+
+.team__name {
+    @include font-settings($secondary-font-size, 1);
+    margin: 0px 0px 10px 0px;
+}
+
+.team__occupation {
+    @include font-settings($primary-text-size, 1.6);
+    margin: 0px;
+}

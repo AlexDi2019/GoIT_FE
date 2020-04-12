@@ -1,0 +1,110 @@
+.teacher {
+    @extend %content-width;
+    &__title {
+        @extend %title;
+        margin-bottom: 20px;
+        @media (min-width: 768px) {
+            margin-bottom: 35px;
+        }
+        @media (min-width: 1280px) {
+            margin-bottom: 55px;
+        }
+        @media (min-width: 1680px) {
+            margin-bottom: 65px;
+        }
+    }
+    &-wrap {
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+    &__img {
+        margin-bottom: 20px;
+        @media (min-width: 768px) {
+            margin-right: 44px;
+            margin-bottom: 0;
+        }
+        @media (min-width: 1280px) {
+            margin-right: 85px;
+        }
+    }
+    &__subtitle {
+        @extend %title;
+        font-size: 16px;
+        line-height: 0.8;
+        margin-bottom: 5px;
+        @media (min-width: 768px) {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        @media (min-width: 1280px) {
+            font-size: 29px;
+        }
+    }
+    &-list {
+        border-top: 1px solid rgba(133, 133, 133, 0.5);
+        padding-top: 20px;
+        @media (min-width: 1280px) {
+            padding-top: 35px;
+        }
+    }
+    &-item {
+        padding-left: 35px;
+        margin-bottom: 25px;
+        background: url(../images/Check.svg) top left/20px 25px no-repeat;
+        @media (min-width: 1280px) {
+            width: 490px;
+            background-size: 30px 35px;
+        }
+        &__text {
+            @extend %list-font;
+            font-weight: 600;
+            @media (min-width: 1280px) {
+                font-size: 17px;
+            }
+        }
+    }
+    &__text {
+        @extend %primory-font;
+        padding-left: 15px;
+        margin-bottom: 20px;
+        @media (min-width: 768px) {
+            padding-left: 0;
+        }
+        @media (min-width: 1280px) {
+            font-size: 16px;
+        }
+        @media (min-width: 1680px) {
+            margin-bottom: 15px;
+        }
+        &--first {
+            &::before {
+                @extend %before;
+                margin-bottom: 20px;
+                @media (min-width: 1280px) {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+    &__link {
+        display: block;
+        margin: 0 auto 50px;
+        width: fit-content;
+        font-size: 11px;
+        color: $main-color;
+        @media (min-width: 768px) {
+            display: inline-block;
+        }
+        @media (min-width: 1280px) {
+            font-size: 16px;
+            margin-bottom: 80px;
+        }
+        @media (min-width: 1680px) {
+            margin-bottom: 130px;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

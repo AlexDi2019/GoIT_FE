@@ -1,0 +1,33 @@
+.section__wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 46px;
+}
+
+.section__slogan {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.section__title {
+    position: relative;
+    font-size: 30px;
+    margin: 0px 0px 106px 0px;
+    padding: 0px;
+}
+
+.section__title::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: rgb(243, 129, 129);
+    left: 50%;
+    bottom: -42px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin: 0px;
+}

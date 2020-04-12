@@ -1,0 +1,207 @@
+  html {
+      box-sizing: border-box;
+  }
+  
+  *,
+  ::before,
+  ::after {
+      box-sizing: inherit;
+  }
+  
+  body {
+      font-size: 14px;
+      color: rgb(102, 102, 102);
+      line-height: 1.2;
+      font-family: 'Montserrat', 'Roboto', sans-serif;
+      margin: 0px;
+      padding: 0px;
+  }
+  
+  img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+  /* header */
+  
+  .container-fluid {
+      min-height: 542px;
+      background-image: linear-gradient(180deg, hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.2)), url(../img/mobile-img.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  .typographic-title {
+      font-size: 30px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+  }
+  
+  .typographic-description {
+      font-size: 18px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+  }
+  
+  .navigation-items {
+      margin-bottom: 116px;
+      padding-top: 20px;
+  }
+  
+  .item-link {
+      display: inline-block;
+      text-decoration: none !important;
+      border: 2px solid rgba(255, 255, 255, 0);
+      border-radius: 20px;
+      transition: all 0.2s linear;
+  }
+  
+  .item-link:hover,
+  .item-link:focus {
+      border-color: rgba(255, 255, 255, 1);
+  }
+  
+  .site-logo {
+      transition: all 0.2s linear;
+  }
+  
+  .img-logo:hover,
+  .img-logo:focus {
+      box-shadow: 1px 1px 7px 1px rgb(255, 255, 255);
+  }
+  
+  .header-button {
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s linear;
+  }
+  /* main */
+  
+  .main-content {
+      padding-top: 70px;
+  }
+  
+  .section-title {
+      font-size: 22px;
+  }
+  
+  .carts {
+      padding: 0px 50px;
+  }
+  
+  .cart-link {
+      text-decoration: none;
+      transition: all 0.2s linear;
+  }
+  
+  .cart-images {
+      position: relative;
+      width: 122px;
+      margin: auto;
+  }
+  
+  .cart-img-wrp {
+      border-radius: 50%;
+      height: 122px;
+      overflow: hidden;
+  }
+  
+  .cart-img {
+      transition: all .3s ease;
+  }
+  
+  .icon {
+      display: block;
+      min-width: 40px;
+      min-height: 40px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+  }
+  
+  .cart-title {
+      font-size: 14px;
+  }
+  
+  .text-dark {
+      color: rgb(51, 51, 51);
+  }
+  
+  .text-ligth {
+      color: rgb(102, 102, 102);
+  }
+  
+  .icon-tv {
+      background-image: url(../img/icon-tv.png);
+  }
+  
+  .icon-chemistry {
+      background-image: url(../img/icon-chemistry.png);
+  }
+  
+  .icon-cap {
+      background-image: url(../img/icon-cap.png);
+  }
+  
+  .icon-telegram {
+      background-image: url(../img/icon-telegram.png);
+  }
+  
+  .cart:hover .cart-img {
+      transform: scale(1.2);
+  }
+  
+  .cart:hover .cart-link {
+      text-decoration: none !important;
+  }
+  /* footer */
+  
+  .main-footer-wrapper {
+      margin: 0px 0px 56px;
+  }
+  
+  .footer-button {
+      font-size: 14px;
+      border: 2px solid rgb(255, 78, 80);
+      border-radius: 20px;
+      padding: 0px 70px;
+      cursor: pointer;
+      transition: all 0.2s linear;
+  }
+  
+  .btn--dark {
+      color: rgb(255, 255, 255);
+      background-color: rgb(255, 78, 80);
+  }
+  
+  .btn--light {
+      background-color: rgb(255, 255, 255);
+      color: rgb(255, 78, 80);
+  }
+  
+  .btn--dark:hover {
+      background-color: rgb(255, 255, 255);
+      color: rgb(255, 78, 80);
+  }
+  
+  .btn--light:hover {
+      color: rgb(255, 255, 255);
+      background-color: rgb(255, 78, 80);
+  }
+  
+  .visually-hidden:not(:focus):not(:active),
+  input[type="checkbox"].visually-hidden,
+  input[type="radio"].visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: 1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0, 0, 0, 0);
+      overflow: hidden;
+  }

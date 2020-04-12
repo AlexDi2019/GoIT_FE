@@ -1,0 +1,12 @@
+.link {
+    text-decoration: none;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.site-logo:hover,
+.site-logo:focus {
+    -webkit-box-shadow: 2px 2px 10px 2px rgb(252, 227, 138);
+    box-shadow: 2px 2px 10px 2px rgb(252, 227, 138);
+}

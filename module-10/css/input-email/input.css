@@ -1,0 +1,23 @@
+.footer__field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: 40px;
+}
+
+.footer__input {
+    width: 230px;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0px;
+    padding: 12px 0px 10px 12px;
+    border: 1px solid rgb(231, 231, 231);
+    border-right: 0px;
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(204, 204, 204);
+}

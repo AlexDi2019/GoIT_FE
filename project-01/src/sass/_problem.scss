@@ -1,0 +1,124 @@
+.problem {
+    @extend %content-width;
+    &-wrap {
+        position: relative;
+    }
+    &-bg {
+        @extend %bg;
+        height: 500px;
+        z-index: -1;
+        @media (min-width: 768px) {
+            height: 320px;
+            background: url(../images/fire_png.png) right bottom no-repeat #111517;
+        }
+        @media (min-width: 1280px) {
+            height: 515px;
+            background-size: 320px;
+        }
+        @media (min-width: 1680px) {
+            height: 545px;
+            background-size: 380px;
+            background-position: right bottom -75px;
+        }
+    }
+    &__title {
+        @extend %title;
+        padding-top: 50px;
+        margin-bottom: 20px;
+        color: #fff;
+        letter-spacing: 1.2px;
+        width: 240px;
+        @media (min-width: 768px) {
+            width: 455px;
+            padding-top: 60px;
+            margin-bottom: 25px;
+        }
+        @media (min-width: 1280px) {
+            width: 740px;
+            padding-top: 80px;
+            margin-bottom: 55px;
+        }
+        @media (min-width: 1680px) {
+            width: 800px;
+            padding-top: 105px;
+            margin-bottom: 65px;
+        }
+        &--orange {
+            color: $main-color;
+        }
+    }
+    &-list {
+        @extend %content-width;
+        counter-reset: section;
+        background-color: #fff;
+        padding: 0 38px;
+        margin: 0 auto 55px;
+        box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+        @media (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 15px 0;
+        }
+        @media (min-width: 1280px) {
+            justify-content: space-between;
+            padding: 30px 100px;
+            margin-bottom: 95px;
+        }
+        @media (min-width: 1680px) {
+            padding: 50px 100px;
+            margin-bottom: 130px;
+        }
+    }
+    &-item {
+        padding-top: 20px;
+        position: relative;
+        @media (max-width: 767px) {
+            &:last-child {
+                padding-bottom: 20px;
+            }
+        }
+        @media (min-width: 768px) {
+            width: 230px;
+            padding-bottom: 5px;
+        }
+        @media (min-width: 768px) and (max-width: 1279px) {
+            &:nth-child(odd) {
+                margin-right: 70px;
+            }
+            &:nth-last-child(-n + 2) {
+                padding-bottom: 20px;
+            }
+        }
+        @media (min-width: 1280px) {
+            width: 280px;
+            padding-bottom: 20px;
+        }
+        @media (min-width: 1680px) {
+            width: 325px;
+            padding: 25px 0;
+        }
+        &::before {
+            @extend %before;
+            margin-bottom: 15px;
+        }
+        &::after {
+            position: absolute;
+            top: 13px;
+            left: 35px;
+            color: $main-color;
+            font-size: 14px;
+            font-weight: 600;
+            counter-increment: section;
+            content: "0" counter(section) "";
+            @media (min-width: 1280px) {
+                font-size: 21px;
+                top: 9px;
+                font-weight: 500;
+            }
+        }
+        &__text {
+            @extend %list-font;
+        }
+    }
+}

@@ -1,0 +1,230 @@
+.reviews {
+    text-align: center;
+    position: relative;
+    &__title {
+        @extend %title;
+        width: 280px;
+        margin: 0 auto 40px;
+        @media (min-width: 768px) {
+            width: auto;
+        }
+        @media (min-width: 1280px) {
+            margin-bottom: 75px;
+        }
+    }
+    &-card {
+        @extend %content-width;
+        padding: 20px 0 30px 0;
+        margin-bottom: 15px;
+        box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            padding: 45px 0 50px 0;
+            margin-bottom: 20px;
+        }
+        @media (min-width: 1280px) {
+            width: 1065px;
+            margin-bottom: 30px;
+        }
+        @media (min-width: 1680px) {
+            margin-bottom: 40px;
+        }
+        &-wrap {
+            @media (min-width: 768px) {
+                padding-top: 15px;
+                margin-right: 43px;
+            }
+            @media (min-width: 1280px) {
+                margin-right: 33px;
+            }
+        }
+        &-content {
+            width: 225px;
+            @media (max-width: 767px) {
+                margin: 0 auto;
+            }
+            @media (min-width: 768px) {
+                width: 435px;
+                text-align: left;
+            }
+            @media (min-width: 1280px) {
+                width: 705px;
+            }
+        }
+        &__img {
+            display: block;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            @media (min-width: 1280px) {
+                width: 145px;
+                height: 145px;
+                margin-bottom: 25px;
+            }
+        }
+        &__icon {
+            width: 50px;
+            height: 28px;
+            margin-bottom: 20px;
+        }
+        &__title {
+            font-size: 13px;
+            color: $main-color;
+            margin-bottom: 5px;
+            @media (min-width: 768px) {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            @media (min-width: 1280px) {
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
+        }
+        &__subtitle {
+            @extend %primory-font;
+            line-height: 17px;
+            margin-bottom: 20px;
+            @media (min-width: 768px) {
+                font-size: 12px;
+            }
+        }
+        &-text {
+            position: relative;
+            color: #111517;
+            font-weight: 600;
+            line-height: 20px;
+            @media (min-width: 1280px) {
+                font-size: 17px;
+                line-height: 29px;
+            }
+            &-wrap {
+                position: relative;
+                z-index: 2;
+                height: 120px;
+                @extend %primory-font;
+                overflow: hidden;
+                @media (min-width: 1280px) {
+                    height: 170px;
+                }
+            }
+        }
+        &__link {
+            position: absolute;
+            padding: 0 25px 0 5px;
+            right: 0;
+            top: 100px;
+            color: $main-color;
+            background-color: #fff;
+            @media (min-width: 768px) {
+                padding-right: 70px;
+            }
+            @media (min-width: 1280px) {
+                font-size: 17px;
+                padding-right: 159px;
+                top: 144px;
+            }
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 6px;
+                height: 1px;
+                border-bottom: 1px dotted #111517;
+                margin-right: 3px;
+            }
+            &:hover {
+                text-decoration: underline;
+                ;
+            }
+        }
+    }
+    &-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 55px;
+        @media (min-width: 768px) {
+            margin-bottom: 75px;
+        }
+        @media (min-width: 1280px) {
+            margin-bottom: 100px;
+        }
+        @media (min-width: 1680px) {
+            margin-bottom: 120px;
+        }
+    }
+    &-item {
+        position: relative;
+        z-index: 2;
+        margin-right: 10px;
+        @media (min-width: 1280px) {
+            margin-right: 35px;
+        }
+        &:hover .reviews-item__img {
+            border-color: $main-color;
+        }
+        &:last-child() {
+            margin: 0;
+        }
+        &--last {
+            @media (max-width: 767px) {
+                margin-right: 0;
+            }
+        }
+        &--media {
+            display: none;
+            @media (min-width: 768px) {
+                display: unset;
+            }
+        }
+        &__link {
+            display: block;
+        }
+        &__img {
+            display: block;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+        }
+    }
+    &-arrows {
+        &-list {
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            width: 280px;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            @media (min-width: 768px) {
+                width: 725px;
+                bottom: 240px;
+            }
+            @media (min-width: 1280px) {
+                width: 1166px;
+                bottom: 270px;
+            }
+        }
+        &-item {
+            &__button {
+                width: 20px;
+                height: 11px;
+                border: none;
+                background: url(../images/left_arrow.png) center/contain no-repeat transparent;
+                @media (min-width: 768px) {
+                    width: 25px;
+                    height: 14px;
+                }
+                &--right {
+                    background-image: url(../images/right_arrow.png);
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,181 @@
+.main {
+    @extend %content-width;
+    &-bg {
+        @extend %bg;
+        background: url(../images/main_bg.jpg) bottom/contain no-repeat transparent;
+        height: 660px;
+        z-index: -1;
+        @media (min-width: 768px) {
+            background-image: url(../images/main_bg768.jpg);
+            height: 595px;
+        }
+        @media (min-width: 1280px) {
+            background-image: url(../images/main_bg1280.jpg);
+            height: 930px;
+        }
+    }
+    &-wrap {
+        margin-bottom: 85px;
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 115px;
+        }
+        @media (min-width: 1280px) {
+            margin-bottom: 125px;
+        }
+        @media (min-width: 1680px) {
+            margin-bottom: 105px;
+        }
+        &-content {
+            @media (max-width: 767px) {
+                margin-bottom: 35px;
+            }
+        }
+    }
+    &__title {
+        @extend %title;
+        width: 235px;
+        margin-bottom: 30px;
+        @media (min-width: 768px) {
+            width: 270px;
+        }
+        @media (min-width: 1280px) {
+            width: 500px;
+            font-size: 48px;
+            line-height: 58px;
+        }
+        @media (min-width: 1680px) {
+            width: 580px;
+            font-size: 58px;
+            line-height: 76px;
+        }
+    }
+    &__text {
+        display: block;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 700;
+        @media (min-width: 1280px) {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        @media (min-width: 1680px) {
+            font-size: 21px;
+            line-height: 33px;
+        }
+        &--grey {
+            font-weight: 400;
+            color: $slave-color;
+        }
+        &--orange {
+            color: $main-color;
+            margin-bottom: 35px;
+            @media (min-width: 1280px) {
+                display: inline-block;
+                margin-bottom: 65px;
+            }
+            @media (min-width: 1680px) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    &__button {
+        @extend %button;
+        margin: 0 auto;
+        background-color: $main-color;
+        border: 1px solid transparent;
+        color: #fff;
+        &:hover {
+            border-color: grey;
+        }
+        @media (min-width: 768px) {
+            display: inline-block;
+        }
+    }
+    &__img {
+        @media (max-width: 767px) {
+            margin: 0 auto;
+            width: fit-content;
+        }
+    }
+    &-list {
+        @extend %content-width;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        @media (min-width: 1280px) {
+            margin-bottom: 85px;
+        }
+        @media (min-width: 1680px) {
+            margin-bottom: 125px;
+        }
+    }
+    &-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 58px;
+        padding-left: 70px;
+        @media (max-width: 767px) {
+            margin-bottom: 25px;
+            &:last-child {
+                margin: 0;
+            }
+        }
+        @media (min-width: 1280px) {
+            width: 375px;
+            height: 104px;
+            padding-left: 85px;
+        }
+        @media (min-width: 1680px) {
+            width: 425px;
+        }
+        &__text {
+            @extend %list-font;
+        }
+    }
+}
+
+.icon {
+    fill: $main-color;
+    height: 38px;
+    @media (min-width: 1280px) {
+        height: 48px;
+    }
+    &-wrap {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 58px;
+        height: 58px;
+        border: 2px solid $main-color;
+        display: flex;
+        align-items: center;
+        @media (min-width: 1280px) {
+            width: 104px;
+            height: 104px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            right: -3px;
+            top: 9px;
+            width: 4px;
+            height: 36px;
+            background-color: #fff;
+            @media (min-width: 1280px) {
+                height: 73px;
+                top: 13px;
+            }
+        }
+    }
+}

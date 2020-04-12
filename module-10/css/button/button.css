@@ -1,0 +1,43 @@
+.header__button {
+    font-size: 14px;
+    padding: 10px 28px;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.footer__button {
+    font-size: 14px;
+    padding: 12px 34px;
+    border: none;
+}
+
+.button {
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.btn--light {
+    color: rgb(255, 255, 255);
+    background-color: rgb(149, 225, 211);
+}
+
+.btn--lighter {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.btn--light:hover,
+.btn--light:focus {
+    color: #eaf0ef;
+}
+
+.btn--lighter:hover,
+.btn--lighter:hover {
+    color: rgb(252, 227, 138);
+    border-color: rgb(252, 227, 138);
+}

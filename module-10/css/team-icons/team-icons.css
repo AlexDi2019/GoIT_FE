@@ -1,0 +1,73 @@
+.team__list {
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
+    background: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+    background: linear-gradient(0deg, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.team__item {
+    list-style: none;
+    background-color: rgb(252, 227, 138);
+}
+
+.team__item:not(:nth-of-type(4n)) {
+    margin-right: 1px;
+}
+
+.team__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 56px;
+    height: 56px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    fill: #f38181;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.team__icon {
+    width: 26px;
+    height: 26px;
+}
+
+.team__link:hover,
+.team__link:focus {
+    fill: rgb(255, 255, 255);
+}
+
+.section__item:hover .team__cart,
+.section__item:focus .team__cart {
+    bottom: 10px;
+    right: 10px;
+}
+
+.team__cart:hover .team__list,
+.team__cart:focus .team__list {
+    opacity: 1;
+}
+
+.team__link:hover,
+.team__link:focus {
+    background-color: rgb(243, 129, 129);
+}

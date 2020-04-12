@@ -1,0 +1,9 @@
+.team--block-title {
+    margin-bottom: 84px;
+}
+
+.section__text {
+    width: 954px;
+    @include font-settings($primary-text-size, 1.6);
+    margin: 0px 0px 90px;
+}

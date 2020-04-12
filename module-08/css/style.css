@@ -1,0 +1,253 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 320px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+/* header */
+
+.main-header {
+    display: flex;
+    background-image: url(../img/mobile-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-navigation-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navigation-items {
+    display: flex;
+    flex-wrap: wrap;
+    order: -1;
+    list-style: none;
+    margin: 20px 0px 116px;
+    padding: 0px 0px 0px 66px;
+}
+
+.navigation-item {
+    cursor: pointer;
+}
+
+.item-link {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    line-height: 1.2;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
+.item-link:hover,
+.item-link:focus {
+    border-color: rgba(255, 255, 255, 1);
+    transition: all 0.2s linear;
+}
+
+.site-logo {
+    margin: 0px auto 22px;
+    cursor: pointer;
+}
+
+.main-header-content {
+    margin: 0px 0px 138px;
+    padding: 0px;
+}
+
+.header-content-title {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 0px 0px 12px;
+    padding: 0px;
+}
+
+.header-content-description {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    margin: 0px 0px 16px;
+    padding: 0px 50px;
+}
+
+.header-button {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    line-height: 1.2;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 78, 80);
+    padding: 12px 48px;
+    cursor: pointer;
+}
+
+.site-logo:hover,
+.site-logo:focus {
+    box-shadow: 1px 1px 7px 1px rgb(255, 255, 255);
+    transition: all 0.2s linear;
+}
+
+.header-button:hover,
+.header-button:focus {
+    box-shadow: 1px 1px 7px 1px rgb(255, 78, 80);
+    transition: all 0.2s linear;
+}
+
+
+/* main */
+
+.main-content {
+    display: flex;
+}
+
+.section-title {
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 70px 0px 20px;
+    padding: 0px 26px;
+}
+
+.section-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 0px auto;
+    padding: 0px 50px;
+}
+
+.section-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+
+.item-img-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-width: 120px;
+    min-height: 120px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item-partner-tv {
+    background-image: url(../img/partner-tv.png);
+}
+
+.item-partner-chemistry {
+    background-image: url(../img/partner-chemistry.png);
+}
+
+.item-partner-cap {
+    background-image: url(../img/partner-cap.png);
+}
+
+.item-partner-telegram {
+    background-image: url(../img/partner-telegram.png);
+}
+
+.section-item-title {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0px 0px 14px;
+}
+
+.section-item-description {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin: 0px;
+}
+
+
+/* footer */
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.main-footer-wrapper {
+    margin: 26px 0px 56px;
+}
+
+.footer-button {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 78, 80);
+    font-weight: 700;
+    border: 2px solid rgb(255, 78, 80);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 70px;
+    cursor: pointer;
+}
+
+.footer-button:hover,
+.footer-button:focus {
+    box-shadow: 1px 1px 7px 1px rgb(255, 78, 80);
+    transition: all 0.2s linear;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}

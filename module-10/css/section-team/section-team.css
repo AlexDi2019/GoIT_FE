@@ -1,0 +1,16 @@
+.section__wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.section__title {
+    margin-bottom: 84px;
+}
+
+.section__text {
+    width: 954px;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 90px;
+}
