@@ -9,16 +9,5 @@ html {
 }
 
 body {
-    font-size: $primary-text-size;
-    line-height: $main-text-height;
-    font-family: $main-font-stack;
-    color: $primary-grey-color;
-    margin: 0px;
-    padding: 0px;
-}
-
-.img {
-    display: block;
-    width: 100%;
-    height: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }

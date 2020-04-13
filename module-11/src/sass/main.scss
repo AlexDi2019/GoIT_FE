@@ -2,26 +2,14 @@
  * Все паршалы импортировать в этот файл
  */
 
-@import 'normalize';
-@import 'helpers/variables';
-@import 'helpers/placeholders';
-@import 'helpers/mixins';
-@import 'helpers/extras';
-@import 'helpers/typography';
-@import 'base';
-// components
-@import 'components/button';
-@import 'components/container';
-@import 'components/wrapper';
-@import 'components/header';
-@import 'components/navigation';
-@import 'components/site-logo';
-@import 'components/menu';
-@import 'components/block-title';
-@import 'components/section-services';
-@import 'components/services-list';
-@import 'components/section-team';
-@import 'components/team-list';
-@import 'components/menu-icons';
-@import 'components/footer-content';
-@import 'components/field';
+@import 'normalize.scss';
+@import 'base.scss';
+@import "normalize";
+@import "helpers/variables";
+@import "helpers/placeholder";
+@import "helpers/based";
+@import "helpers/header";
+@import "helpers/service";
+@import "helpers/social";
+@import "helpers/team";
+@import "helpers/footer";

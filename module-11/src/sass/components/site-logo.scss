@@ -1,9 +1,0 @@
-.site-logo {
-    display: block;
-    font-size: 0px;
-    @extend %link;
-    &:hover,
-    &:focus {
-        box-shadow: 2px 2px 10px 2px rgb(252, 227, 138);
-    }
-}
