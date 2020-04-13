@@ -1,5 +1,5 @@
 {
-    "name": "gulp-starter-kit",
+    "name": "GoIT_FE",
     "version": "1.2.0",
     "description": "",
     "main": "index.js",
@@ -9,7 +9,7 @@
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
     },
-    "homepage": "https://luxplanjay.github.io/gulp-starter-kit",
+    "homepage": "https://github.com/AlexDi2019/GoIT_FE",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
