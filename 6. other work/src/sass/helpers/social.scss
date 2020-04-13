@@ -1,0 +1,43 @@
+.social {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1px;
+    width: 56px;
+    height: 56px;
+    background-color: $hover-color;
+    transition: background-color 0.2s linear;
+    &:hover .icon {
+        fill: $primary-color;
+    }
+    &:hover {
+        background-color: $slave-color;
+    }
+    &:nth-child(4) {
+        margin: 0;
+    }
+}
+
+.social__link {
+    @extend %link;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    fill: $slave-color;
+    transition: fill 0.2s linear;
+}
